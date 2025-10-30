@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aventura Incrível</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tela-inicial">
+    <h1 class="titulo">Aventura Incrível</h1>
+    <p class="subtitulo">Pronto para começar sua jornada?</p>
+    <button class="btn-iniciar" onclick="iniciarJogo()">Iniciar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.tela-inicial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background-image: url('sua-imagem-de-fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.btn-iniciar {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #ff8c00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.btn-iniciar:hover {
+  background-color: #e07b00;
+}
+
+// script.js
+function iniciarJogo() {
+  window.location.href = "inicio_da_historia.html"; // Substitua pelo seu link para a página inicial do jogo
+}
